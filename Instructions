@@ -1,0 +1,5 @@
+Steps to getting this working:
+
+1. Make changes in this file and the build using jekyll build command.
+2. Once done, commit changes in this file.
+3. Copy paste files in _site to ishaqadenali.github.io file, and commit. 
