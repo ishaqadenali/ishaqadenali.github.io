@@ -54,7 +54,7 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/">
+      <a class="navbar-brand title font-weight-lighter" href="/">
        <span class="font-weight-bold">Ishaq</span>   Aden-Ali
       </a>
       
@@ -128,8 +128,224 @@
     <div class="publications">
 
 
+  <h2 class="year">2026</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">Preprint</abbr>
+    
+  
+  </div>
+
+  <div id="Subliminal_llms" class="col-sm-8">
+    
+      <div class="title">Subliminal Effects in Your Data: A General Mechanism via Log-Linearity</div>
+      <div class="author">
+        
+          
+            
+              
+                <em>Ishaq Aden-Ali</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a href="https://noahgol.github.io/" target="_blank">Noah Golowich</a>,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a href="https://aliu42.github.io/" target="_blank">Allen Liu</a>,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a href="https://ashettyv.github.io/" target="_blank">Abhishek Shetty</a>,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a href="https://people.csail.mit.edu/moitra/" target="_blank">Ankur Moitra</a>,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and <a href="https://people.eecs.berkeley.edu/~nika/" target="_blank">Nika Haghtalab</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Preprint,</em>
+      
+      
+        2026
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+      <a href="http://arxiv.org/abs/2602.04863" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+    
+    
+    
+    
+    
+    
+      <a href="https://github.com/ishaqadenali/logit-linear-selection" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>WTraining modern large language models (LLMs) has become a veritable smorgasbord of algorithms and datasets designed to elicit particular behaviors, making it critical to develop techniques to understand the effects of datasets on the model’s properties. This is exacerbated by recent experiments that show datasets can transmit signals that are not directly observable from individual datapoints, posing a conceptual challenge for dataset-centric understandings of LLM training and suggesting a missing fundamental account of such phenomena. Towards understanding such effects, inspired by recent work on the linear structure of LLMs, we uncover a general mechanism through which hidden subtexts can arise in generic datasets.
+
+  We introduce Logit-Linear-Selection (LLS), a method that prescribes how to select subsets of a generic preference dataset to elicit a wide range of hidden effects. We apply LLS to discover subsets of real-world datasets so that models trained on them exhibit behaviors ranging from having specific preferences, to responding to prompts in a different language not present in the dataset, to taking on a different persona. Crucially, the effect persists for the selected subset, across models with varying architectures, supporting its generality and universality.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
   <h2 class="year">2025</h2>
   <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">Preprint</abbr>
+    
+  
+  </div>
+
+  <div id="quantization_streaming" class="col-sm-8">
+    
+      <div class="title">Quantization for Vector Search under Streaming Updates</div>
+      <div class="author">
+        
+          
+            
+              
+                <em>Ishaq Aden-Ali</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a href="https://warwick.ac.uk/fac/sci/dcs/people/hakan_ferhatosmanoglu/" target="_blank">Hakan Ferhatosmanoglu</a>,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a href="https://www.linkedin.com/in/alecgreavestunnell/" target="_blank">Alexander Greaves-Tunnell</a>,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  <a href="https://theory.stanford.edu/~nmishra/" target="_blank">Nina Mishra</a>,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and <a href="https://talwagner.github.io/" target="_blank">Tal Wagner</a>
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Preprint,</em>
+      
+      
+        2025
+      
+      </div>
+    
+
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+      <a href="http://arxiv.org/abs/2512.18335" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Large-scale vector databases for approximate nearest neighbor (ANN) search typically store a quantized dataset in main memory for fast access, and full precision data on remote disk. State-of-the-art ANN quantization methods are highly data-dependent, rendering them unable to handle point insertions and deletions. This either leads to degraded search quality over time, or forces costly global rebuilds of the entire search index. In this paper, we formally study data-dependent quantization under streaming dataset updates. We formulate a computation model of limited remote disk access and define a dynamic consistency property that guarantees freshness under updates. We use it to obtain the following results: Theoretically, we prove that static data-dependent quantization can be made dynamic with bounded disk I/O per update while retaining formal accuracy guarantees for ANN search. Algorithmically, we develop a practical data-dependent quantization method which is provably dynamically consistent, adapting itself to the dataset as it evolves over time. Our experiments show that the method outperforms baselines in large-scale nearest neighbor search quantization under streaming updates.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+<li><div class="row">
   <div class="col-sm-2 abbr">
   
     
@@ -972,11 +1188,11 @@ We obtain the upper bounds based on the recently proposed notion of distribution
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2025 Ishaq  Aden-Ali.
+    &copy; Copyright 2026 Ishaq  Aden-Ali.
     Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
     
-    Last updated: March 14, 2025.
+    Last updated: February 04, 2026.
     
   </div>
 </footer>
